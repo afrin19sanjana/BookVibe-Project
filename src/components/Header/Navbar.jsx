@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const Navbar = () => {
   const links = <>
-  <li className='mr-4 work-sans text-xl text-[#13131380]'>Home</li>
-  <li className='mr-4 work-sans text-xl text-[#13131380]'>Listed Books</li>
-  <li className='mr-4 work-sans text-xl text-[#13131380]'>Pages To Read</li>
+ <Link to ='/'> <li className='mr-4 work-sans text-xl text-[#13131380]'>Home</li></Link>
+ <Link to ='/listedBooks'> <li className='mr-4 work-sans text-xl text-[#13131380]'>Listed Books</li></Link>
+ <Link to ='/bookPages'> <li className='mr-4 work-sans text-xl text-[#13131380]'>Pages to Read</li></Link>
   </>
     return (
         <div className="navbar bg-base-100 shadow-sm ">
@@ -19,7 +20,7 @@ const Navbar = () => {
             {links}
             </ul>
           </div>
-          <a className="btn btn-ghost text-3xl font-bold text-[#131313] work-sans">Book Vibe</a>
+          <Link to='/' className=" text-3xl font-bold text-[#131313] work-sans">Book Vibe</Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
@@ -27,8 +28,8 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end space-x-4">
-          <a className="btn bg-[#23BE0A] text-white">Sign In</a>
-          <a className="btn bg-[#59C6D2] text-white">Sign Up</a>
+        <Link to=''><button className="btn bg-[#23BE0A] text-white">Sign in</button></Link>
+        <Link to=''><button className="btn bg-[#59C6D2] text-white">Sign Up</button></Link>
         </div>
       </div>
     );
