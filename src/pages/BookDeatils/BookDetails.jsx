@@ -10,7 +10,7 @@ const BookDetails = ({bookDesign}) => {
     const bookIdRoute = parseInt(id);
     const data = useLoaderData();
     const singleBook = data.find(book => book.bookId === bookIdRoute)
-    const {bookId,bookName,author,image,review,totalPages,rating,category,tags,publisher,yearOfPublishing} = singleBook;
+    const {bookName,author,image,review,totalPages,rating,category,tags,publisher,yearOfPublishing} = singleBook;
 const handleMarkAsRead = (id)=> {
     addToStoreDB(id);
     MySwal.fire({

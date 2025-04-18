@@ -4,7 +4,7 @@ import { FaStarHalfAlt } from "react-icons/fa";
 import { Link } from 'react-router';
 
 const Book = ({singleBook}) => {
-    const {bookId,bookName,author,image,review,totalPages,rating,category,tags,publisher,yearOfPublishing} = singleBook;
+    const {bookId,bookName,author,image,rating,category,tags,publisher,yearOfPublishing} = singleBook;
    
     
     return (
@@ -25,7 +25,7 @@ const Book = ({singleBook}) => {
         </div>
         <div className="flex justify-between items-center ">
         <p className='font-bold text-2xl text-[#131313] playfair-display'>{bookName}</p>
-        <p className='bg-[#23BE0A] text-white text-center rounded-4xl '>{yearOfPublishing}</p>
+        <p className='bg-[#23BE0A] text-white text-center rounded-4xl'>{yearOfPublishing}</p>
         </div>
          
           <p className=' text-lg text-[#13131380] work-sans '>Written By : {author}</p>
