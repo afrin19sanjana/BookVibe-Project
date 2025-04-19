@@ -7,7 +7,7 @@ import Root from '../pages/Root/Root';
 import Error from '../pages/Error/Error';
 import Home from '../pages/Home/Home';
 import BookDetails from '../pages/BookDeatils/BookDetails';
-import About from '../pages/About/About';
+import About from '../pages/about/About';
 import ListedBooks from '../pages/ListedBooks/ListedBooks';
 import BookPages from '../pages/BookPages/BookPages';
 
